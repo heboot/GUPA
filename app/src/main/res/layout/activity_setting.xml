@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/ablt_top"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="设置"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x20" />
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <Button
+            android:id="@+id/btn_set_count"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y50"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y15"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/bg_rect_blue"
+            android:text="设置私信条数"
+            android:textColor="@color/qmui_config_color_white"
+            android:textSize="@dimen/x16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ablt_top" />
+        <Button
+            android:id="@+id/btn_set_time"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y50"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y15"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/bg_rect_blue"
+            android:text="设置时间"
+            android:textColor="@color/qmui_config_color_white"
+            android:textSize="@dimen/x16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_set_count" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
